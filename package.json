@@ -18,15 +18,14 @@
   },
   "homepage": "https://github.com/ThompsonJonM/demo-qa#readme",
   "dependencies": {
-    "express": "^4.15.5"
+    "chromedriver": "^2.33.2",
+    "express": "^4.15.5",
+    "selenium-webdriver": "^3.6.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "chromedriver": "^2.32.3",
-    "mocha": "^3.5.3",
-    "selenium-webdriver": "^3.5.0",
-    "supertest": "^3.0.0",
     "jest": "^21.0.2",
-    "selenium-webdriver": "^3.5.0"
+    "mocha": "^3.5.3",
+    "supertest": "^3.0.0"
   }
 }
