@@ -29,12 +29,14 @@ test('should go to contact page', function(t) {
 
 test('should enter text into contact and submit', function(t) {
     driver.get('http://www.jmarshthompson.com/contact/');
-    driver.findElement(webdriver.By.name('nameBox')).sendKeys('Jonathan Thompson');
-    // driver.findElement(webdriver.By.name('emailBox')).sendKeys('jthompson@ricasurgical.com');
-    // driver.findElement(webdriver.By.name('messageBox')).sendKeys('This is a test using Selenium and Tape.');
-    // driver.findElement(webdriver.By.name('submitButton')).click();
-    // driver.getCurrentUrl().then(function(url) {
-    //     t.equal(url, 'http://www.jmarshthompson.com/contactsubmit');
-    // })
+    driver.findElement(webdriver.By.name('name')).sendKeys('Jonathan Thompson');
+    driver.findElement(webdriver.By.name('email')).sendKeys('jthompson@ricasurgical.com');
+    driver.findElement(webdriver.By.name('message')).sendKeys('This is a test using Selenium and Tape.');
+    driver.findElement(webdriver.By.name('submitButton')).click();
+    driver.getCurrentUrl().then(function(url) {
+        t.equal(url, 'http://www.jmarshthompson.com/contact-submit');
+
+    driver.quit();
+    })
     t.end();
 })
