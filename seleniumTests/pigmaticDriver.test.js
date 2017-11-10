@@ -11,4 +11,9 @@ var driver = new webdriver.Builder()
 
 driver.get('https://pigmatic-app.herokuapp.com');
 driver.findElement(webdriver.By.linkText('Add Collection')).click();
+
+driver.findElement(webdriver.By.name('collectionName')).sendKeys('Eastern European');
+driver.findElement(webdriver.By.name('accessionID')).sendKeys('21');
+
+
 // driver.quit();
