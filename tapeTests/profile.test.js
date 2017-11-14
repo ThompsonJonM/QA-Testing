@@ -32,7 +32,16 @@ test('should go to contact page', function(t) {
     t.end();
 })
 
+test('should go to the works page', function(t) {
+    driver.findElement(webdriver.By.name('worksLink')).click();
+    driver.getCurrentUrl().then(function(url) {
+        t.deepEqual(url, 'http://www.jmarshthompson.com/works');
+    })
+    t.end();
+})
+
 test('should enter text into contact and submit', function(t) {
+    driver.findElement(webdriver.By.name('contactLink')).click();
     driver.findElement(webdriver.By.name('name')).sendKeys('Jonathan Thompson');
     driver.findElement(webdriver.By.name('email')).sendKeys('jthompson@ricasurgical.com');
     driver.findElement(webdriver.By.name('message')).sendKeys('This is a test using Selenium and Tape.');
