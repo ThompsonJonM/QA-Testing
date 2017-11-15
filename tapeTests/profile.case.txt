@@ -1,7 +1,7 @@
  ----------------------------------------------------------------------------------------------------------------------------------------------------------
 |       ID       SCENARIO       STEPS                     DATA                            EXPECTED RESULT              ACTUAL              PASS/FAIL       |
  ----------------------------------------------------------------------------------------------------------------------------------------------------------
-|      001      Check Email     1. Go to site                                             Email validation             As expected         Fail            | 
+|      001      Check Email     1. Go to site                                             Email validation             As expected         Pass            | 
 |               Validation      2. Enter name             Jonathan                        should result in                                                 |
 |               with Invalid    3. Enter email            test case                       post error                                                       |
 |               Data            4. Enter message          This should fail                                                                                 |
