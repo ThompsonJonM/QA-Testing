@@ -19,6 +19,7 @@
 # Further Reading and Links
 - Below are links I am currently using to study testing practices:
     + [Page Objects](https://martinfowler.com/bliki/PageObject.html)
+    + [JS Page Objects](https://github.com/jamesottaway/js-page-object)
     + [End to End Testing](https://martinfowler.com/bliki/PageObject.html)
     + [Why use Tape?](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4)
     + [DemoQA](http://demoqa.com/)
