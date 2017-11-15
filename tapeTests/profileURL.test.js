@@ -30,7 +30,7 @@ test('should go to contact page', function(t) {
         t.equal(url, 'http://www.jmarshthompson.com/contact');
     })
     t.end();
-})
+});
 
 test('should go to the works page', function(t) {
     driver.findElement(webdriver.By.name('worksLink')).click();
@@ -38,23 +38,9 @@ test('should go to the works page', function(t) {
         t.deepEqual(url, 'http://www.jmarshthompson.com/works');
     })
     t.end();
-})
-
-test('should enter text into contact and submit', function(t) {
-    driver.findElement(webdriver.By.name('contactLink')).click();
-    driver.findElement(webdriver.By.name('name')).sendKeys('Jonathan Thompson');
-    driver.findElement(webdriver.By.name('email')).sendKeys('jthompson@ricasurgical.com');
-    driver.findElement(webdriver.By.name('message')).sendKeys('This is a test using Selenium and Tape.');
-    driver.findElement(webdriver.By.name('submitButton')).click();
-    driver.getCurrentUrl().then(function(url) {
-        t.equal(url, 'http://www.jmarshthompson.com/contact-submit');
-
-    driver.quit();
-    })
-    t.end();
-})
+});
 
 afterEach('should close the driver once testing has finished', function(t) {
     driver.quit()
     t.end();
-})
+});

@@ -25,9 +25,9 @@ test('should nav to view collection', function(t) {
     })
 
     t.end();
-})
+});
 
 afterEach('should close driver upon test completion', function(t) {
     driver.quit()
     t.end();
-})
+});

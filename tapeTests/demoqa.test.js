@@ -12,11 +12,11 @@ const driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
     .build();
 
-// Opens new window for each test
+// Opens new window for testing
 beforeEach('should navigate to demoqa site', function(t) {
     driver.get('http://www.demoqa.com/')
     t.end();
-})
+});
 
 /* Nav to demoqa site and compare title
 Test will pass if title === 'Demoqa | Just another Wordpress site' */
@@ -26,7 +26,7 @@ test('title should equal demoqa title', function(t) {
     })
 
     t.end();
-})
+});
 
 /* Will nav to page, click "Tab 2" then compare aria
 Test will pass if aria === 'false' */
@@ -37,10 +37,10 @@ test('navigate to ui-id-2', function(t) {
     })
 
     t.end();
-})
+});
 
 // Closes the driver following each test
 afterEach('should close browser following each test', function(t) {
     driver.quit()
     t.end();
-})
+});

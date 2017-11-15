@@ -16,7 +16,7 @@ const driver = new webdriver.Builder()
 beforeEach('should open to profile page', function(t) {
     driver.get('http://www.jmarshthompson.com')
     t.end();
-})
+});
 
 test('should enter text into contact and submit', function(t) {
     driver.findElement(webdriver.By.name('contactLink')).click();
@@ -27,7 +27,7 @@ test('should enter text into contact and submit', function(t) {
     t.fail('Invalid input entered');
 
     t.end();
-})
+});
 
 test('should enter text into contact and submit', function(t) {
     driver.findElement(webdriver.By.name('contactLink')).click();
@@ -40,9 +40,9 @@ test('should enter text into contact and submit', function(t) {
     })
 
     t.end();
-})
+});
 
 afterEach('should close the driver once testing has finished', function(t) {
     driver.quit()
     t.end();
-})
+});
